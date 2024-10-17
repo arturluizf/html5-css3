@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="inun1">Número 1</label>
+            <input type="number" name="number1" id="inun1" max="50" min="0" required oninput="isoma.innerHTML  = Number(inun1.value) + Number(inun2.value)">
+        </p>
+        <p>
+            <label for="inun2">Número 2</label>
+            <input type="number" name="number1" id="inun2" max="50" min="0" required oninput="isoma.innerHTML  = Number(inun1.value) + Number(inun2.value)">
+
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <label for="inun">Número</label>
+            <input type="range" name="nun" id="inun"  min="1" max="10" value="5" oninput="ival.innerHTML = Number(inun.value)">
+            <output id="ival">5</output>
+        </p>
+        <p>
+            <label for="iano">Ano nascido</label>
+            <input type="number" name="anonas" id="iano" required max="2007" min="1930" oninput="CalcIdade()">
+
+        </p>
+        <p>
+            <label for="iidade">Sua idade:</label>
+            <output id="iidade">0</output>
+        </p>
+    </form>
+
+    <script>
+        function CalcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Telas dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivo, ou simplesmente aumente ou diminua o navegador.</p>
+    <picture>
+         <source media="(max-width: 750px )" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="Foto flexicível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir audio em html5.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/templeoftreasures.mp3" type="audio/mpeg">
+        <source src="midia/templeoftreasures.ogg" type="audio/ogg">
+        <source src="midia/templeoftreasures.wav" type="audio/wav">
+    </audio>
+    <h1>Reproduzindo vídeo</h1>
+    <p>Vamos reproduzir vídeo em html5.</p>
+   <video width="500" poster="folhas.jpg" controls>
+    <source src="video/video2.mp4.mp4" type="video/mp4">
+    <source src="video/video2.mkv.mkv" type="video/mkv">
+    <source src="video/video2.webm.webm" type="video/webm">
+    <source src="video/video2.ogv.ogv" type="audio/ogg">
+    <p>navegador não compatível</p>
+   </video>
+   <h1>inserindo vídeo pelo youtube</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=RausTL05DI4IGqos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

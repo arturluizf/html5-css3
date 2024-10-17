@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div, fieldset {
+            margin: 10px;
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>Preencha o formulário abaixo</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+ 
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" id="inome" name="nome" placeholder="Nome completo" autocomplete="name" size="15" required >
+            </div>
+            <div>
+                <label for="uidade">Idade</label>
+                <input type="number" id="uidade" name="idade" placeholder="Digite aqui" autocomplete="cc-number" size="5" required >
+            </div>
+            <div>
+                <label for="idata">Data de nascimento</label>
+                <input type="date" id="idata" name="dat-nasc" placeholder="" autocomplete="" size="" required >
+            </div>
+        </fieldset>
+
+        
+
+        <fieldset>
+            <legend>Assunto Escolar</legend>
+
+            <div>
+                <label for="imdeia">Média</label>
+                <input type="number" id="imedia" name="media" placeholder="0 a 10" autocomplete="cc-number" step="0.1" required maxlength="10" minlength="0">
+            </div>
+            <div>
+                <label for="isemana">Semana</label>
+                <input type="week" id="isemana" name="semana" placeholder="Digite aqui" autocomplete="" size="" required>
+            </div>
+            <div>
+                <label for="imes">Mês</label>
+                <input type="month" id="imes" name="mes" placeholder="Digite aqui" autocomplete="bday-month" size="" required value="2024-10" >
+            </div>
+            <div>
+                <label for="ihora">Hora</label>
+                <input type="time" id="ihora" name="horas"  placeholder="Digite aqui" autocomplete="time" required value="07:30">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+
+            <div>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required  placeholder="exemplo@exemplo.com" autocomplete="email">
+            </div>
+
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel"  required placeholder="xx xxxx-xxxx" autocomplete="tel" pattern="^\d{2}\d{4,5}\d{4}$">
+
+
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+
+
+    </form>
+</body>
+</html>
