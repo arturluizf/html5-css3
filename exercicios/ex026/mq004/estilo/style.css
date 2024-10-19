@@ -34,6 +34,10 @@ h1 {
     font-size: 2em;
 }   
 
+h1::after {
+    content: " : Celular";
+}
+
 img#phone {
     display: block;
     margin: auto;

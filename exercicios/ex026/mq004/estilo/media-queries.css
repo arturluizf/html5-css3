@@ -1,17 +1,113 @@
 @charset "UTF-8";
 
-@media screen {
-    
-}
+/*Todas as mídias*/
+
+/*Typical Devie Breakpoints
+  sm: 600px,
+  md:600px e 768px,
+  lg:768px e 992px,
+  xl:992px e 1200px,
+  xxl:acima de 1200px
+*/
+
 
 @media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    /* Estilos para dispositivos com largura maior que 768px */
+     body {
+        background-image: url(../imagens/back-tablet.jpg);
+     }
+
+     main {
+        width: 500px;
+     }
+
+     h1::after {
+        content: " : Tablet";
+    }
+
+     img#tablet {
+        display: block;
+        margin: auto;
+     }
+     img#phone {
+        display: none;
+     }
     
 }
 
-@media screen {
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    /* Estilos para dispositivos com largura maior que 992px */
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+     }
+
+     main {
+        width: 600px;
+     }
+
+     h1::after {
+        content: " : Deckstop";
+    }
+
+     img#pc {
+        display: block;
+        margin: auto;
+     }
+     img#phone {
+        display: none;
+     }
     
 }
 
-@media screen {
-    
+@media only screen and (min-width: 1200px) {
+    /* Estilos para dispositivos com largura maior que 1200px */
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+     }
+     main {
+        width: 700px;
+     }
+
+     h1::after {
+        content: " : Telas Grandes";
+    }
+
+     img#tv {
+        display: block;
+        margin: auto;
+     }
+     img#phone {
+        display: none;
+     }
 }
+
