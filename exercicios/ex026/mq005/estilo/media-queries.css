@@ -2,15 +2,77 @@
 
 /*Todas as mídias*/
 
+/*Typical Device Breakpoints
+Extra small mobile portrait: 320px-480px
+Small mobile landscape: 481px-600px
+Tablets: Small Tablets (Portrait): 601px – 768px, Large Tablets (Landscape): 769px – 1024px
+Laptops e Small Desktops: Small Desktops and Laptops: 1025px – 1280px
+Large Desktops: Large Desktops and High-Resolution Screens: 1281px – 1440px
+Extra-Large Screens: Extra-Large Desktops: 1441px and up 
+
+ou
+
+/*Todas as mídias*/
+
 /*Typical Devie Breakpoints
-  sm: 600px,
-  md:600px e 768px,
-  lg:768px e 992px,
-  xl:992px e 1200px,
+  esm: max-600px,
+  sm: min-600px
+  md: min-768px,
+  lg: min-992px,
+  xl: min-1200px,
   xxl:acima de 1200px
 */
 
-@media print {
 
+@media print {
+  body {
+    background-color: white;
+  }
+
+  header h1 {
+    color: black;
+  }
+
+  #burguer {
+    display: none;
+  }
+
+  main {
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+  } 
+
+
+
+@media only screen and (min-width: 768px) {
+  #burguer {
+    display: none;
+  }
+
+  menu { 
+    display: block;
+  }
+
+  li {
+    display: inline-block;
+    border-radius: 10px;
+  }
+
+  #op1 {
+    margin-left: 10px;
+  }
+
+  menu ul li a {
+    padding: 10px;
+    
+  }
+
+  main {
+    width: 740px;
+  }
 }
+
+
 
