@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*Todas as mídias*/
+
+/*Typical Devie Breakpoints
+  sm: 600px,
+  md:600px e 768px,
+  lg:768px e 992px,
+  xl:992px e 1200px,
+  xxl:acima de 1200px
+*/
+
+@media print {
+
+}
+
