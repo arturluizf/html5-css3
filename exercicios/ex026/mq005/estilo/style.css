@@ -32,21 +32,24 @@ header h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#burguer {
+    display:block;
+    margin: auto;
+    color: white;
+    margin-bottom: 10px;
+}
 
-
+menu {
+    display: none;
+}
 
 menu > ul > li {
     background-color: white;
     text-align: center;
-    display: inline-block;
     list-style-type: none;
-    border-radius: 10px;
     margin-bottom: 10px;
 }
 
-li#op1 {
-    margin-left: 10px;
-}
 
 menu li a {
     color: black;
