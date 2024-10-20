@@ -39,6 +39,10 @@ header h1 {
     margin-bottom: 10px;
 }
 
+#burguer:hover {
+    background-color: darkblue;
+}
+
 menu {
     display: none;
 }
