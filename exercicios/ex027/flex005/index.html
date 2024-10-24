@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgba(92, 6, 241, 0.833);
+            height: 100vh;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        main {
+            background-color: rgba(10, 168, 220, 0.779);
+            border-radius: 10px;
+            width: 500px;
+            height: 300px;
+            flex-flow: row nowrap;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            background-color: rgb(16, 193, 93);
+            padding: 70px;
+            border-radius: 10px;
+
+
+            h1 {
+                background-color: rgba(255, 24, 24, 0.865);
+                color: white;
+                border-radius: 5px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
+    </main>
+</body>
+</html>
