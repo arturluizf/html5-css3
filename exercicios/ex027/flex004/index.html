@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Box</title>
     <style>
-     
 
       div.conteiner {
         background-color: #000000;
         border-radius: 10px;
-        
-        flex: auto;
+        height: 200px;
+
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
       }
 
       div.item {
         background-color: rgb(152, 0, 186);
         color: white;
         font-weight: bolder;
-        border: 1px solid black;
         text-align: center;
-        padding: 10px;
-        margin: 5px;
-        border: none;
         border-radius: 5px;
+        padding: 10px 0px;
+        margin: 5px;
 
-        flex: auto;
       }
     </style>
   </head>
